@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التقييمات - استشارات زراعية</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">استشارات زراعية</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="articles.html">المقالات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consultation.html">طلب استشارة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">اتصل بنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="reviews.html">التقييمات</a>
+            </li>
+            <li class="nav-item" id="loginLink">
+              <a class="nav-link" href="login.html">تسجيل الدخول</a>
+            </li>
+            <li class="nav-item" id="logoutLink" style="display: none">
+              <a class="nav-link" href="#" id="logoutBtn">تسجيل الخروج</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <main class="container mt-5 pt-4">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                التقييمات
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h1 class="display-5 fw-bold mb-4">آراء عملائنا</h1>
+          <p class="lead text-muted">ما يقوله عملاؤنا عن خدماتنا</p>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12 text-center mb-4">
+          <div class="d-inline-block bg-light p-3 rounded">
+            <h4 class="mb-0">
+              التقييم العام <span class="text-warning">4.8</span>/5
+            </h4>
+            <div class="text-warning mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="mb-0">بناءً على 127 تقييمًا</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- تقييم 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/user1.jpg"
+                  alt="أحمد محمد"
+                  class="rounded-circle me-3"
+                  width="60"
+                />
+                <div>
+                  <h5 class="mb-0">أحمد محمد</h5>
+                  <p class="text-muted mb-0">مزارع نخيل</p>
+                </div>
+              </div>
+              <div class="text-warning mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">
+                "استشارة ممتازة ساعدتني في حل مشكلة آفات النخيل التي عانيت منها
+                لمدة عام. فريق محترف جداً ويقدم معلومات دقيقة."
+              </p>
+              <p class="text-muted small mb-0">
+                <i class="far fa-clock me-1"></i> 15 مارس 2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تقييم 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/user2.jpg"
+                  alt="فاطمة علي"
+                  class="rounded-circle me-3"
+                  width="60"
+                />
+                <div>
+                  <h5 class="mb-0">فاطمة علي</h5>
+                  <p class="text-muted mb-0">صاحبة مشتل</p>
+                </div>
+              </div>
+              <div class="text-warning mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">
+                "المقالات الموجودة على الموقع مفيدة جداً، خاصة للمبتدئين في
+                الزراعة. استفدت كثيراً من نصائح الري والتسميد."
+              </p>
+              <p class="text-muted small mb-0">
+                <i class="far fa-clock me-1"></i> 2 فبراير 2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تقييم 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/user3.jpg"
+                  alt="خالد سعيد"
+                  class="rounded-circle me-3"
+                  width="60"
+                />
+                <div>
+                  <h5 class="mb-0">خالد سعيد</h5>
+                  <p class="text-muted mb-0">مزارع خضروات</p>
+                </div>
+              </div>
+              <div class="text-warning mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="card-text">
+                "الدعم الفني سريع وفعال، شكراً لكم. زارني المهندس المختص خلال 3
+                أيام فقط من طلب الاستشارة."
+              </p>
+              <p class="text-muted small mb-0">
+                <i class="far fa-clock me-1"></i> 20 يناير 2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تقييم 4 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/user4.jpg"
+                  alt="سارة عبدالله"
+                  class="rounded-circle me-3"
+                  width="60"
+                />
+                <div>
+                  <h5 class="mb-0">سارة عبدالله</h5>
+                  <p class="text-muted mb-0">مزارعة عضوية</p>
+                </div>
+              </div>
+              <div class="text-warning mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">
+                "استشارة ممتازة في مجال الزراعة العضوية، قدمت لي حلولاً عملية
+                ومبتكرة. أنصح الجميع بهذه الخدمة."
+              </p>
+              <p class="text-muted small mb-0">
+                <i class="far fa-clock me-1"></i> 5 يناير 2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تقييم 5 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/user5.jpg"
+                  alt="محمد ناصر"
+                  class="rounded-circle me-3"
+                  width="60"
+                />
+                <div>
+                  <h5 class="mb-0">محمد ناصر</h5>
+                  <p class="text-muted mb-0">صاحب مزرعة دواجن</p>
+                </div>
+              </div>
+              <div class="text-warning mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">
+                "الاستشارة ساعدتني في تحسين إنتاجية مزرعتي بنسبة 30%. فريق محترف
+                ويقدم معلومات دقيقة وعملية."
+              </p>
+              <p class="text-muted small mb-0">
+                <i class="far fa-clock me-1"></i> 15 ديسمبر 2022
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تقييم 6 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/user6.jpg"
+                  alt="نورة حسن"
+                  class="rounded-circle me-3"
+                  width="60"
+                />
+                <div>
+                  <h5 class="mb-0">نورة حسن</h5>
+                  <p class="text-muted mb-0">مهندسة زراعية</p>
+                </div>
+              </div>
+              <div class="text-warning mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">
+                "أستخدم الموقع كمرجع لطلابي في الجامعة. المعلومات دقيقة ومحدثة
+                وتغطي جميع جوانب الزراعة الحديثة."
+              </p>
+              <p class="text-muted small mb-0">
+                <i class="far fa-clock me-1"></i> 30 نوفمبر 2022
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-4">شاركنا برأيك</h3>
+              <p class="mb-4">
+                ساعدنا في تحسين خدماتنا من خلال مشاركة تجربتك معنا
+              </p>
+              <a href="contact.html" class="btn btn-success px-4">
+                <i class="fas fa-edit me-2"></i> أضف تقييمك
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

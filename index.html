@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>استشارات زراعية</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">استشارات زراعية</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="articles.html">المقالات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consultation.html">طلب استشارة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">اتصل بنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">التقييمات</a>
+            </li>
+            <li class="nav-item" id="loginLink">
+              <a class="nav-link" href="login.html">تسجيل الدخول</a>
+            </li>
+            <li class="nav-item" id="logoutLink" style="display: none">
+              <a class="nav-link" href="#" id="logoutBtn">تسجيل الخروج</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <header class="hero-section">
+      <div class="container text-center text-white">
+        <h1 class="display-4">مرحبًا بكم في موقع استشارات زراعية</h1>
+        <p class="lead">نقدم لكم أفضل الاستشارات الزراعية من خبراء متخصصين.</p>
+        <a href="consultation.html" class="btn btn-success btn-lg"
+          >اطلب استشارة الآن</a
+        >
+      </div>
+    </header>
+
+    <!-- قسم عن الموقع -->
+    <section class="about-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">عن الموقع</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/team.jpeg"
+              alt="عن الموقع"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <p class="lead">
+              موقع استشارات زراعية هو منصة متخصصة تهدف إلى تقديم الاستشارات
+              الزراعية للفلاحين والمزارعين. نقدم خدماتنا من خلال فريق من الخبراء
+              في المجال الزراعي.
+            </p>
+            <p>
+              نحرص على تقديم معلومات دقيقة وحديثة لمساعدة العملاء على تحسين
+              إنتاجيتهم الزراعية.
+            </p>
+            <a href="about.html" class="btn btn-outline-success">المزيد عنا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services-section py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">خدماتنا</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <i
+                  class="fas fa-seedling text-success mb-3"
+                  style="font-size: 2rem"
+                ></i>
+                <h3>استشارات متخصصة</h3>
+                <p>استشارات من خبراء في المجال الزراعي.</p>
+                <a href="consultation.html" class="btn btn-sm btn-success"
+                  >طلب استشارة</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <i
+                  class="fas fa-book text-success mb-3"
+                  style="font-size: 2rem"
+                ></i>
+                <h3>مقالات تعليمية</h3>
+                <p>مقالات تساعدك على تحسين إنتاجيتك الزراعية.</p>
+                <a href="articles.html" class="btn btn-sm btn-success"
+                  >استعراض المقالات</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <i
+                  class="fas fa-headset text-success mb-3"
+                  style="font-size: 2rem"
+                ></i>
+                <h3>دعم فني</h3>
+                <p>دعم فني متواصل لحل مشاكلك الزراعية.</p>
+                <a href="contact.html" class="btn btn-sm btn-success"
+                  >تواصل معنا</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المقالات الأخيرة -->
+    <section class="articles-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">أحدث المقالات</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 h-100">
+              <img
+                src="images/article1.avif"
+                class="card-img-top"
+                alt="مقال 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">تحسين إنتاجية المحاصيل</h5>
+                <p class="card-text">نصائح لتحسين إنتاجية المحاصيل الزراعية.</p>
+                <a href="#" class="btn btn-success">اقرأ المزيد</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 h-100">
+              <img
+                src="images/article2.jpeg"
+                class="card-img-top"
+                alt="مقال 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">الري الذكي</h5>
+                <p class="card-text">كيفية تطبيق تقنيات الري الذكي.</p>
+                <a href="#" class="btn btn-success">اقرأ المزيد</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 h-100">
+              <img
+                src="images/article3.jpeg"
+                class="card-img-top"
+                alt="مقال 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">مكافحة الآفات</h5>
+                <p class="card-text">طرق فعالة لمكافحة الآفات الزراعية.</p>
+                <a href="#" class="btn btn-success">اقرأ المزيد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="articles.html" class="btn btn-outline-success"
+            >عرض جميع المقالات</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="testimonials-section py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">آراء العملاء</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <img
+                    src="images/user1.jpg"
+                    alt="عميل 1"
+                    class="rounded-circle me-3"
+                    width="50"
+                  />
+                  <h5 class="card-title mb-0">أحمد محمد</h5>
+                </div>
+                <p class="card-text">
+                  "موقع رائع، ساعدني في حل مشكلة زراعية كانت تؤرقني."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <img
+                    src="images/user2.jpg"
+                    alt="عميل 2"
+                    class="rounded-circle me-3"
+                    width="50"
+                  />
+                  <h5 class="card-title mb-0">فاطمة علي</h5>
+                </div>
+                <p class="card-text">
+                  "المقالات مفيدة جدًا، خاصة للمبتدئين في الزراعة."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <img
+                    src="images/user3.jpg"
+                    alt="عميل 3"
+                    class="rounded-circle me-3"
+                    width="50"
+                  />
+                  <h5 class="card-title mb-0">خالد سعيد</h5>
+                </div>
+                <p class="card-text">"الدعم الفني سريع وفعال، شكرًا لكم."</p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="reviews.html" class="btn btn-outline-success"
+            >عرض جميع التقييمات</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
